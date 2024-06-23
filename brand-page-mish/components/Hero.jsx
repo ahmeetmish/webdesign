@@ -2,7 +2,7 @@ import { MoveDownRight } from "lucide-react"
 
 export default function Hero() {
   return (
-    <section className="h-screen">
+    <section className="h-[calc(100vh-82px)]">
       <div className="h-full gap-10 flex items-end justify-between text-zinc-900">
         <h2 className="text-[11rem] font-black leading-[120%]">Unlimited <span className="px-10 rounded text-white bg-zinc-900">Creativity</span> <br /> with Mish.</h2>
         <div className="relative gap-2 flex items-center mb-5 cursor-pointer transition-all group">
