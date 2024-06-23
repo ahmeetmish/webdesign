@@ -3,6 +3,7 @@ import localFont from "next/font/local"
 import AnimatedCursor from "react-animated-cursor"
 
 import Header from "@/components/Header"
+import Footer from "@/components/Footer"
 
 export const metadata = {
   title: "Mish Brand Page",
@@ -13,7 +14,7 @@ const ppneuemontreal = localFont({ src: '../font/ppneuemontreal-book.woff', weig
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`mx-6 ${ppneuemontreal.className}`}>
+      <body className={`overflow-x-hidden mx-6 ${ppneuemontreal.className}`}>
         <AnimatedCursor 
           innerSize={11}
           innerScale={1.3}
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
         />
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )
