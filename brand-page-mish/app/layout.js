@@ -1,5 +1,6 @@
 import "./globals.css"
 import localFont from "next/font/local"
+import AnimatedCursor from "react-animated-cursor"
 
 import Header from "@/components/Header"
 
@@ -13,6 +14,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`mx-6 ${ppneuemontreal.className}`}>
+        <AnimatedCursor 
+          innerSize={11}
+          innerScale={1.3}
+          outerAlpha={0}
+          hasBlendMode={true}
+          innerStyle={{
+            backgroundColor: '#222',
+            mixBlendMode: 'exclusion'
+          }}
+        />
         <Header />
         {children}
       </body>
