@@ -10,7 +10,7 @@ const ppneuemontreal = localFont({ src: '../font/ppneuemontreal-book.woff', weig
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={ppneuemontreal.className}>
+      <body className={`mx-6 ${ppneuemontreal.className}`}>
         {children}
       </body>
     </html>
